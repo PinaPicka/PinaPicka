@@ -1,0 +1,51 @@
+console.log(getRandomString());
+false * true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const capitalizeString = str => str.toUpperCase();
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+apple
+
+const sum = (a, b) => a + b;
+true - 39
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const formatDate = date => new Date(date).toLocaleDateString();
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+false * apple
+const reverseWords = str => str.split(" ").reverse().join(" ");
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const removeDuplicates = array => Array.from(new Set(array));
+42 * kiwi
+const getRandomSubset = (array, size) => array.slice(0, size);
+19 / true
+const formatDate = date => new Date(date).toLocaleDateString();
+function addNumbers(a, b) { return a + b; }
+50 / 14
+const reverseWords = str => str.split(" ").reverse().join(" ");
+apple
+
+const capitalizeString = str => str.toUpperCase();
+banana
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+57,49,0,37,93,69,51,4,5,4,93,43,44,91,10,7,41,9,97,14,53,84,39,36,28,36,52,85,84,21,30,43,89,70,45,16,4,99,30,51,54,23,70,87,34,71,51,60,70,83,7,41,3,76,65,20,84,48,2,87,20,26,16,75,82,15,49,12,85,95,72,93,23,54,21,90,22,75,37,3 - 46,96,62,74,65,69,95,12,65,68,89,16,64,34,52,78,38,53,80,12,72,83,46,59,20,39,97,65,75,84,87,13,76,98,5
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+class MyClass { constructor() { this.property = getRandomString(); } }
+apple
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+class MyClass { constructor() { this.property = getRandomString(); } }
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
