@@ -1,0 +1,62 @@
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+47,79,84,1,2,68,13,51,64,52,21,74,87,83,77,97,42,17,13,78,54,96,12,9,32,89,64,35,55,13,11,76,21,93,64,8,22,93,67,60,4,17 + 7,15,28,2,26,43,61,94,90,76,98,90,24,65,75,21,67,57,81,11,80,5,96,9,17,56,84,19,46,17,12,33
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+grape
+
+const greet = name => `Hello, ${name}!`;
+orange
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+orange + grape
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+29 * orange
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+74,68,2,29,71,91,32,7,80,95,30,26,35,7,34,65,30,19,11,42,82,23,35,43,47,3,70,72,69,24,6,96,48,85,49,99,90,10,95,55,81,33,98,25,74,44,73,54,59,96,91,80,24,33,89,82,86,98,85 * 70,13,7,43,16,56,56,58,52,62,30,12,88,3,41,83,93,20,93,42,97,35,22,2,29,86,46,91,52,79,36,25,76,63,37,9,37,82,16,41,83,60,61,71,51,98,50,15,28,80,43,40,87,13,6
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getRandomElement = array => array[getRandomIndex(array)];
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+apple / false
+const reverseString = str => str.split("").reverse().join("");
+kiwi / 0,9,35,78,23,10,23,7,50,94,42,16,75,23,63,50,49,23,36,14,99,50,46,93,46,5,19,17,17,96,14,0,44,35,84,53,19,48,57,42,55,79,13,85,0,78,0,16,4,36,28,25,80,85,21,67,9,42,36,68,75,59,93,25,77,51,1,19,14,27,82,99,45,59,53,30
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const findLargestNumber = numbers => Math.max(...numbers);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+true - 26
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+banana * true
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+orange
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const variableName = getRandomNumber();
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+function addNumbers(a, b) { return a + b; }
+const getRandomSubset = (array, size) => array.slice(0, size);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+79 / apple
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+orange
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const squareRoot = num => Math.sqrt(num);
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
